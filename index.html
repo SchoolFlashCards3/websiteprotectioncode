@@ -18,3 +18,14 @@
         }
     </script>
 </head>
+<body>
+    <div id="codeForm">
+        <h2 style="color: #ffffff">Welcome to template!</h2>
+        <br>
+        <p style="color: #ffffff">Please put in the password to continue.</p>
+        <form onsubmit="return checkCode()">
+            <input type="text" id="codeInput" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div id="protectedContent" style="display:none;">
