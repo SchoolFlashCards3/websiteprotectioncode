@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Protection</title>
+     <script>
+        function checkCode() {
+            var code = document.getElementById("codeInput").value;
+            if (code === "98598") {
+              
+                document.getElementById("protectedContent").style.display = "block";  // Show content
+                document.getElementById("codeForm").style.display = "none"; 
+            } else {
+                alert("Incorrect code. Please try again.");
+            }
+            return false;  // Prevent form submission
+        }
+    </script>
+</head>
