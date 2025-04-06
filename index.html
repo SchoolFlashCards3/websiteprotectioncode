@@ -7,7 +7,7 @@
      <script>
         function checkCode() {
             var code = document.getElementById("codeInput").value;
-            if (code === "98598") {
+            if (code === "12345") {
               
                 document.getElementById("protectedContent").style.display = "block";  // Show content
                 document.getElementById("codeForm").style.display = "none"; 
@@ -20,12 +20,14 @@
 </head>
 <body>
     <div id="codeForm">
-        <h2 style="color: #ffffff">Welcome to template!</h2>
+        <h2 style="color: #000000">Welcome to template!</h2>
         <br>
-        <p style="color: #ffffff">Please put in the password to continue.</p>
+        <p style="color: #000000">Please put in 12345 to continue.</p>
         <form onsubmit="return checkCode()">
             <input type="text" id="codeInput" required>
             <input type="submit" value="Submit">
         </form>
     </div>
     <div id="protectedContent" style="display:none;">
+
+    <h1>TEST</h1>
